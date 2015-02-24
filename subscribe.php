@@ -1,6 +1,6 @@
 <?php
 $apiKey = '69654dfa91debb2b401077c46ae2fab6-us10';
-$listId = 'bdcd4b0a73';
+$listId = 'f378498a6a';
 $double_optin=true;
 $send_welcome=true;
 $email_type = 'html';
