@@ -281,6 +281,9 @@ to {
 	padding: 45px 0;
 	text-align:center;
 }
+.logo img{
+	border: 1px solid #fcfcfc;
+}
 .btn-large {
 	font-size:18px;
 	padding:20px 50px;
