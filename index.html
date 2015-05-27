@@ -1,295 +1,428 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+  <!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+
+
+  <!--[if gt IE 8]>
+  <!-->
+  <html class="no-js" lang="en" >
+    <!--<![endif]-->
+
+
+
+
+
+
 <head>
-<!-- Meta, title, CSS, favicons, etc. -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A new way of tracking data on the web">
-<title>Slabs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Slabs - The Data Platform</title>
 
-<!-- Bootstrap core CSS -->
-<link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
 
-<!-- Startup CSS -->
-<link href="css/startup.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/general_foundicons.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie8-grid-foundation-4.css">
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="css/general_foundicons_ie7.css">
+    <![endif]-->
 
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="js/html5shiv.js"></script>
-  <script src="js/respond.min.js"></script>
-<![endif]-->
 
-<!-- Favicons -->
-<link rel="shortcut icon" href="images/favicon.png">
-<script src="js/pace.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
 
-<!-- Custom Google Font : Open Sans -->
+    <script src="js/vendor/custom.modernizr.js"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="preloader"></div>
-<!-- Parallax Header Starts -->
-<main id="top" class="masthead" role="main">
-  <div class="container"> 
-    <!-- Startup Logo -->
-    <div class="logo"> <a href="#"><img width="250" height="70" src="images/slabsLogo.png" alt="startup-logo"></a> </div>
-    <!-- Hero Title -->
-    <h1 class="moving-title">A new way to <strong><span data-typer-targets="use, filter, mash, distill, order, merge">use</span></strong> your data <br></h1>
-    <h3 class="text-highlight">You can use our toolset to get and then <strong>distill</strong> data from around the web. <br/>We then give you this data back in an API call or a feed for use in adverts or applications.</h3>
-
-    <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup" class="row">
-      <div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-        <form class="form-horizontal" action="//slabs.us10.list-manage.com/subscribe/post?u=3094a6a434523a83166fd74a0&amp;id=f378498a6a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-          <div id="mc_embed_signup_scroll" class="form-group">
-
-
-            <div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_3094a6a434523a83166fd74a0_f378498a6a" tabindex="-1" value=""></div>
-              <input class="form-control input-lg" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email" required>
-            </div>
-            <div class="col-md-5 col-sm-4">
-              <button type="submit" class="btn btn-success btn-lg">GET EARLY ACCESS</button>
-            </div>
-
-          </div>
-
-        </form>
-      </div>
-    </div>
-    <!--End mc_embed_signup-->
-
-
-    <!--  Scroll to Explore --> 
-    <a href="#explore" class="scrollto">
-    <p>SCROLL DOWN TO EXPLORE</p>
-    <p class="scrollto--arrow"><img src="images/scroll_down.png" alt="scroll down arrow"></p>
-    </a> 
-    <!-- // Scroll to Explore Ends --> 
-  </div>
-</main>
-<!-- // Parallax Header Ends --> 
-<!-- Container -->
-<div class="container" id="explore"> 
-  <!-- Hero Image -->
-  <div class="section-title">
-    <h1>Get exactly the data you want, <strong>no filler</strong>.</h1>
-    <h4>Slabs has a drag & drop system that allows you to easily pull data and then refine that data into the perfect form for you front end.</h4>
-  </div>
-  <section class="row heroimg breath">
-    <div class="col-md-12 text-center"> <img src="images/flat-mockup-template.png" alt="flat-mockup-template"></div>
-  </section>
-  <!-- //Hero Image -->
-
-</div>
-<!-- // Container Ends -->
-
-<!-- Grey Highlight Section -->
-<div class="highlight testimonials">
-  <div class="container">
-    <!-- Features Section -->
-    <div class="section-title">
-      <h1>What makes <strong>slabs</strong> different?</h1>
-      <h4>We make the process of getting data into your application or advert quick and easy.</h4>
-      <h4>Our toolkit is designed so its really straightforward to push data in and then to get data out.</h4>
-    </div>
-
-
-    <section class="row features breath">
-
-      <!-- Feature 01 -->
-      <div class="col-sm-12 col-md-4">
-        <div class="thumbnail"> <img src="images/flat-feature-icon-4.png" alt="analytics-icon">
-          <div class="caption">
-            <h3>Product Feeds</h3>
-            <p>You can pull data from multiple web pages then filter the data live for use in adverts.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Feature 03 -->
-      <div class="col-sm-12 col-md-4">
-        <div class="thumbnail"> <img src="images/flat-feature-icon-2.png" alt="analytics-icon">
-          <div class="caption">
-            <h3>Application Backends</h3>
-            <p>You can use slabs to provide data to your application, leaving you free to concentrate on the user experience.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Feature 02 -->
-      <div class="col-sm-12 col-md-4">
-        <div class="thumbnail"> <img src="images/flat-feature-icon-1.png" alt="analytics-icon">
-          <div class="caption">
-            <h3>Low-tech data sources</h3>
-            <p>We even provide ways of updating your data by email, so ‘non-tech’ people can update a data feed live.
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-
-    </section>
-
-    <!-- // End Testimonials --> 
-    
-  </div>
-</div>
-<!-- // End Grey Highlight Section --> 
-
-<!-- Container -->
-<div class="container"> 
   
-  <!-- Pricing
-  <div class="section-title">
-    <h2>Honest pricing. No surprises.</h2>
-    <h4>No contract. No risk. No credit card required. </h4>
-  </div>
-  <section class="row breath planpricing">
-    <div class="col-md-4">
-      <div class="pricing color1">
-        <div class="planname">Personal</div>
-        <div class="price"> <span class="curr">$</span>14<span class="per">/MO</span></div>
-        <div class="billing">Billed Annually</div>
+
+    <!-- Begin main Above the fold Header -->
+    <div class="full-row grey"> 
+      <!-- "full-row" class allows background to stretch to 100% width -->
+      <div class="row header">
+        <div class="large-7 columns features-intro">
+          <!-- Main Heading -->
+          <div class="image-header"><img src="img/logo.png" alt=""></div>
+          <h1>The Dynamic Data Platform</h1>
+          <p class="main">
+            Get the right content into your ads by leveraging our easy-to-use drag & drop interface and dynamic URLs
+          </p>
+          <!-- Email Subscribe Form -->
+          <div class="large-9 columns">
+            <div class="row collapse email">
+              <form action="//slabs.us10.list-manage.com/subscribe/post?u=3094a6a434523a83166fd74a0&amp;id=f378498a6a" method="POST" id="email-form">
+                <p class="top-email">Sign up to receive updates:</p>
+
+                <div class="small-9 columns">
+                  <input type="email" name="email" placeholder="your email address" /></div>
+              
+                <div class="small-3 columns">
+                  <input class="button postfix radius" type="submit" />
+                </div>
+                <div id="success-message"></div>
+
+              </form>
+              <!-- End Email Row -->
+            </div>
+          </div>
+
+        </div>
+
+        <div class="large-5 columns">
+          <img src="img/slab-cloud.png">
+        </div>
+
+      <!-- End row -->
       </div>
+      <!-- End "full-row" -->
     </div>
-    <div class="col-md-4">
-      <div class="pricing color2">
-        <div class="planname">Agency</div>
-        <div class="price"> <span class="curr">$</span>49<span class="per">/MO</span></div>
-        <div class="billing">Billed Annually</div>
+
+    <!-- Begin Features -->
+    <div class="row features">
+
+      <!-- Divided in to columns of 4 to create a layout of thirds -->
+      <div class="large-4 columns">
+        
+        <h2>
+          <img class="feature" src="img/build.png" width="70%" height="70%" alt="">
+          <div>Build</div>
+        </h2>
+        <!-- Feature Description -->
+        <p>
+          Using our easy-to-use drag and drop interface, connect individual <em>slabs</em> together to form a network. Some slabs grab data, some transform data and some format the output of data.
+
+        </p>
+        <!-- Corresponding Image -->
+        
+        <!-- End Feature -->
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="pricing color3">
-        <div class="planname">Enterprise</div>
-        <div class="price"> <span class="curr">$</span>99<span class="per">/MO</span></div>
-        <div class="billing">Billed Annually</div>
+
+      <!-- Begin Feature 2 -->
+      <div class="large-4 columns">
+        <h2>
+          <img class="feature" src="img/gather.png" width="70%" height="70%">
+          <div>Gather</div>
+        </h2>
+        <p>
+          Get data from feeds, csv files or enter manually. Scrape your live website, or grab data from your social networks. All without writing a line of code. 
+        </p>
+        <!-- End Feature 2 -->
       </div>
+
+      <!-- Begin Feature 3 -->
+      <div class="large-4 columns">
+        <h2>
+          <img class="feature" src="img/deliver.png" width="70%" height="70%">
+          <div>Deliver</div>
+        </h2>
+        <p>
+        Call our dynamic endpoint to access exactly the right data for any situation. Our networks run on-demand, so you can get up-to-date content, specified at run-time.
+        </p>
+        <!-- End Feature 3 -->
+      </div>
+
+      <!-- End Row -->
     </div>
-  </section>
-  -->
-  <!-- // End Pricing --> 
-  
-  <!-- FAQ -->
-  <div class="section-title">
-    <h1>Some questions you might have</h1>
-    <h4>and some answers from us</h4>
-  </div>
-  <section class="row faq breath">
-    <div class="col-md-6">
-      <h6>How do I use it?</h6>
-      <p>
-          Basically, you connect simple modules, or ‘slabs’, together to form a network.
-          You are provided with an API endpoint for each of these networks.
-          When you call the API the network runs and returns data.
-      </p>
-            <h6>What if I want different data each time?</h6>
-            <p>
-                No problem!! We have actually implemented a dynamic system where you can provide settings in the API call which will run the network differently and give you different data.
-            </p>
-    </div>
-    <div class="col-md-6">
-      <h6>How much?</h6>
-      <p>
-        Our 10 day trial is 100% free and does not require a credit card to start.
-        If at the end of your trial you would like to upgrade, great.
-        If not, you can cancel your account, or put it on hold to come back to later.
-        Our paid plans vary depending on how much work we have to do to get your data.</p>
-      <h6>Can I switch plans later?</h6>
-      <p>Absolutely. You can switch between our paid plans, or cancel your account altogether whenever you like. We will adjust any payments accordingly.</p>
-    </div>
-  </section>
-  <!-- // End FAQ -->
-
-</div>
-<!-- // Container Ends -->
 
 
 
-<!-- Container -->
-<div class="container">
-  <section class="row breath">
-    <div class="col-md-12 footerlinks">
-      <p>&copy; 2015 Slabs. All Rights Reserved</p>
-    </div>
-  </section>
-  <!-- // End Client Logos -->
+        <!-- Begin Large Feature Blocks -->
+        <div class="full-row grey">
+          <div class="row tour">
+            <div class="small-12 columns">
+              <!-- Main Title & Subtitle -->
+              <h1>Simple to use</h1>
+              <p class="header">
+                Set up your network in seconds, get data into your ad in minutes
+              </p>
+            </div>
 
-</div>
-<!-- // Container Ends -->
+            <!-- Begin Features Tour -->
+            <!-- Feature 1 -->
+            <!-- Large Image -->
+            <div class="large-8 columns">
+              <img src="img/magnifier-620x350.png">
+            </div>
+            <!-- Side Text -->
+            <div class="large-4 columns description">
+              <h2>info about the interface</h2>
+              <p class="description">Lorem ipsum blah blah</p>
+              <p class="description">
+                Lorem ipsum blah blah
+              </p>
+            </div>
+            <!-- Horizontal Rule -->
+            <!--<hr>-->
+            <!-- End Feature 1 -->
 
-<!-- JS and analytics only. -->
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/easing.js"></script>
-<script src="js/typer.js"></script>
-<script src="js/nicescroll.js"></script>
-<script src="js/ketchup.all.js"></script>
+            <!-- Feature 2 -->
+          <!--  <div class="large-4 columns description">-->
+          <!--    <h2>Sections</h2>-->
+          <!--    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+          <!--    <p>Ut quam urna, feugiat at mollis in, faucibus sit amet neque.</p>-->
+          <!--  </div>-->
+          <!--  <div class="large-8 columns">-->
+          <!--    <img src="img/free-admin-template-psd.png"></div>-->
+          <!--  <hr>-->
+            <!-- End Feature 2 --> 
+          <!--</div>-->
+          <!-- End Row -->
+        </div>
 
-<!-- Typer -->
+        <!-- Begin Second Dark Grey Features Section -->
+        <div class="full-row darkgrey">
+          <div class="row">
+            <div class="large-12 columns video">
+              <!-- Heading & Subtitle -->
+              <h1>Examples</h1>
+              <p>Endless possibilities for intelligent data.</p>
+              <div class="dark-hr"></div>
+            </div>
 
-<script>
-    $(function () {
-      $('[data-typer-targets]').typer();
-    });
-  </script>
+            <!-- Start features -->
 
-<!-- Scroll to Explore -->
+            <div class="large-4 columns darkgrey">
+              <h2>Dynamic Filter</h2>
+              <img src="img/filtericon.png" width="720" height="450" alt="">
+              <p class="description">
+                Upload your product feed and link a filter slab to your endpoint. Dynamically populate the ad with relevant products.
+              </p>
+            </div>
 
-<script>
+            <div class="large-4 columns darkgrey">
+              <h2>Scrape and Rank</h2>
+              <img src="img/white-labeling.png" width="720" height="450" alt="">
+              <p class="description">
+                Generate a best-selling product feed by scraping content from your live site.
+              </p>
 
+            </div>
+            
+            
+            
+            <div class="large-4 columns darkgrey">
+              <h2>Time sensitive messaging</h2>
+              <img src="img/on-site-gallery.png" width="720" height="450" alt="">
+              <p class="description">
+                 Countdown to events or releases and automatically update messaging based on time or date.
+              </p>
+            </div>
+            
+            <hr class="dark-hr">
 
- $(function() {
-    $('.scrollto, .gototop').bind('click',function(event){
-		 var $anchor = $(this);
-		 $('html, body').stop().animate({
-         scrollTop: $($anchor.attr('href')).offset().top
-          }, 1500,'easeInOutExpo');
-     event.preventDefault();
-      });
-  });
+            <div class="large-4 columns darkgrey">
+              <h2>React to Weather</h2>
+              <img src="img/white-labeling.png" width="720" height="450" alt="">
+              <p class="description">
+                Switch products to sweaters and coats when it’s cold and t-shirts and shorts when it’s hot.
+              </p>
 
+            </div>
+            
 
-</script>
+            <div class="large-4 columns darkgrey">
+              <h2>Keep it Social</h2>
+              <img src="img/rich-text-editor.png" width="720" height="450" alt="">
+              <p class="description">
+                Combine Instagram & Twitter into one feed and create a display wall at large events. Get photos and comments linked to a #hashtag or username.
+                Take advantage of automatic filtering or moderate by hand.
+              </p>
+            </div>
 
+            <div class="large-4 columns darkgrey">
+              <h2>Search</h2>
+              <img src="img/white-labeling.png" width="720" height="450" alt="">
+              <p class="description">
+                Use our dynamic endpoint and filtering slab to allow users to search your catalogue from within an ad
+              </p>
 
-<!--============== SUBSCRIBE FORM =================-->
+            </div>
+            
+            
 
-<script>
-$(document).ready(function() {
-	$('#subscribeForm').ketchup().submit(function() {
-		if ($(this).ketchup('isValid')) {
-			var action = $(this).attr('action');
-			$.ajax({
-				url: action,
-				type: 'POST',
-				data: {
-					email: $('#address').val()
-				},
-				success: function(data){
-					$('#result').html(data);
-				},
-				error: function() {
-					$('#result').html('Sorry, an error occurred.');
-				}
-			});
-		}
-		return false;
-	});
+            <!-- Start Icons Section -->
+            <div class="large-12 columns video">
+              <!-- Dark Horizontal Rule Divider -->
+              <div class="dark-hr"></div>
+
+              <h1>Fully Featured</h1>
+              <p>Everything you need to populate your ad</p>
+            </div>
+
+            <div class= "small-4 columns ">
+            <!-- Begin Icon List -->
+              <ul class="icons">
+                 <!-- Each Feature is a <li> item -->
+                <li> 
+                  <!-- Specify the icon using the "foundicon-name" class format 
+                  more info: http://zurb.com/playground/foundation-icons
+                  -->
+                  <span class="icon"><i class="fa fa-line-chart fa-2x"></i></span>
+                  <span class="descript">Scales for high volumes</span>
+                </li>
+                <li> 
+                <span class="icon"><i class="fa fa-smile-o fa-2x"></i></span>
+                  <span class="descript">Friendly support
+                </li>
+                <li>
+                  <span class="icon"><i class="fa fa-flash fa-2x"></i></span>
+                  <span class="descript">Optimised for size and speed
+                </li>
+              </ul>
+            </div>
+
+            <div class= "small-4 columns">
+              <ul class="icons">
+                <li>
+                  <span class="icon"><i class="fa fa-globe fa-2x"></i></span>
+                  <span class="descript">Distributed delivery
+                </li>
+                <li>
+                  <span class="icon"><i class="fa fa-history fa-2x"></i></span>
+                  <span class="descript">Intelligent caching
+                </li>
+                <li>
+                  <span class="icon"><i class="fa fa-credit-card fa-2x"></i></span>
+                  <span class="descript">Straightforward pricing
+                </li>
+              </ul>
+            </div>
+
+            <div class= "small-4 columns">
+              <ul class="icons">
+                <li>
+                  <span class="icon"><i class="fa fa-laptop fa-2x"></i></span>
+                  <span class="descript">Cross Browser and Device
+                </li>
+                <li>
+                  <span class="icon"><i class="fa fa-cloud fa-2x"></i></span>
+                  <span class="descript">CORS enabled
+                </li>
+                <li>
+                  <span class="icon"><i class="fa fa-calendar fa-2x"></i></span>
+                  <span class="descript">Regular feature updates</span>
+                </li>
+              </ul>
+              <!-- End List -->
+            </div>
+
+            <!-- End Row -->
+          </div>
+          <!-- End Dark Grey Container --> 
+        </div>
+
+        <!-- Footer -->
+        <div class="full-row darkgrey footer">
+          <div class="row">
+            <!-- Begin Footer Links, Repeat this Block -->
+            <div class="small-6 large-3 columns">
+              <a href="https://twitter.com/slabsio">
+              <h5><i class="fa fa-twitter fa-lg"></i></h5>
+              <ul class="footer-nav">
+                <li>@slabsio</li>
+              </ul>
+              </a>
+            </div>
+
+            <div class="small-6 large-3 columns">
+              <a href="https://www.facebook.com/slabsio">
+              <h5><i class="fa fa-facebook-official fa-lg"></i></h5>
+              <ul class="footer-nav">
+                <li>/slabsio</li>
+              </ul>
+              </a>
+            </div>
+
+            <div class="large-3 columns">
+              <a href="https://github.com/slabs-io">
+              <h5><i class="fa fa-github fa-lg"></i></h5>
+              <ul class="footer-nav">
+                <li>slabs-io</li>
+              </ul>
+              </a>
+            </div>
+
+            <div class="large-3 columns">
+              <a href="mailto:info@slabs.io">
+              <h5><i class="fa fa-envelope fa-lg"></i></h5>
+              <ul class="footer-nav">
+                <li>info@slabs.io</li>
+              </ul>
+              </a>
+            </div>
+
+            <div class="dark-hr"></div>
+            <!-- End Row -->
+          </div>
+          <!-- End Container -->
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+        <!-- Ajax Form -->
+      <script type="text/javascript">
+    $(document).ready(function() { 
+    // bind form using ajaxForm 
+    $('#email-form').ajaxForm({ 
+        resetForm: true,
+
+        // target identifies the element(s) to update with the server response 
+        target: '#success-message', 
+ 
+        // success identifies the function to invoke when the server response 
+        // has been received; here we apply a fade-in effect to the new content 
+        success: function() { 
+            $('#success-message').fadeIn('slow'); 
+        } 
+    }); 
 });
-</script>
+    </script>
 
-</body>
+      <script src="js/foundation.min.js"></script>
+
+      <script src="js/foundation/foundation.js"></script>
+
+      <!--
+      <script src="js/foundation/foundation.alerts.js"></script>
+
+      <script src="js/foundation/foundation.clearing.js"></script>
+
+      <script src="js/foundation/foundation.cookie.js"></script>
+    -->
+      <script src="js/foundation/foundation.dropdown.js"></script>
+
+      <script src="js/foundation/foundation.forms.js"></script>
+      <!--
+      <script src="js/foundation/foundation.joyride.js"></script>
+
+      <script src="js/foundation/foundation.magellan.js"></script>
+
+      <script src="js/foundation/foundation.orbit.js"></script>
+    -->
+      <script src="js/foundation/foundation.placeholder.js"></script>
+<!--
+      <script src="js/foundation/foundation.reveal.js"></script>
+
+      <script src="js/foundation/foundation.section.js"></script>
+
+      <script src="js/foundation/foundation.tooltips.js"></script>
+-->
+      <script src="js/foundation/foundation.topbar.js"></script>
+
+      <script src="js/jquery.form.js"></script> 
+
+
+      <script>$(document).foundation();</script>
+  </body>
 </html>
-
