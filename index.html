@@ -67,10 +67,10 @@
                 <p class="small-9 columns top-email">Sign up to receive updates:</p>
 
                 <div class="small-9 columns">
-                  <input type="email" name="email" placeholder="your email address" /></div>
+                  <input id="email_input" type="email" name="email" placeholder="your email address" /></div>
               
                 <div class="small-3 columns">
-                  <input class="button postfix radius" type="submit" />
+                  <input id="email_submit" class="button postfix radius" type="submit" />
                 </div>
                 <div id="success-message"></div>
 
@@ -380,19 +380,38 @@
         <!-- Ajax Form -->
       <script type="text/javascript">
     $(document).ready(function() { 
-    // bind form using ajaxForm 
-    $('#email-form').ajaxForm({ 
-        resetForm: true,
+    
+    $('#email_submit').click(function(){
+      var action = $('#email_form').attr('action');
+      $.ajax({
+  				url: action,
+  				type: 'POST',
+  				data: {
+  					email: $('#email_input').val()
+  				},
+  				success: function(data){
+  					$('#success-message').html(data);
+  					$('#success-message').fadeIn('slow');
+  					$('#email_input').val
+  				},
+  				error: function() {
+  					$('#success-message').html('Sorry, an error occurred.');
+  				}
+			});
+    })
+    
+  //   $('#email-form').ajaxForm({ 
+  //       resetForm: true,
 
-        // target identifies the element(s) to update with the server response 
-        target: '#success-message', 
+  //       // target identifies the element(s) to update with the server response 
+  //       target: '#success-message', 
  
-        // success identifies the function to invoke when the server response 
-        // has been received; here we apply a fade-in effect to the new content 
-        success: function() { 
-            $('#success-message').fadeIn('slow'); 
-        } 
-    }); 
+  //       // success identifies the function to invoke when the server response 
+  //       // has been received; here we apply a fade-in effect to the new content 
+  //       success: function() { 
+  //           $('#success-message').fadeIn('slow'); 
+  //       } 
+  //   }); 
 });
     </script>
 
