@@ -151,6 +151,10 @@ p.header {
     text-align: center;
 }
 
+.smallFeatures {
+    padding-bottom:40px;
+}
+
 .smallFeatures h1 {
     color: #312A2A;
 }
@@ -200,6 +204,18 @@ hr {
 	text-align: left;
 }
 
+.icons li{
+    margin-bottom:20px;
+}
+
+.footer i{
+    color:#00A0B0;
+}
+
+.footer .row:before {
+    background : #fff !important;
+}
+
 ul li {
 	font-size: 16px;
 	letter-spacing: 1px;
@@ -241,7 +257,6 @@ ul li {
 }
 
 .footer {
-	background: #222 !important;
 	text-align: left !important;
 }
 
