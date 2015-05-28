@@ -392,13 +392,14 @@
   				success: function(data){
   					$('#success-message').html(data);
   					$('#success-message').fadeIn('slow');
-  					$('#email_input').val
+  					$('#email_input').val('');
   				},
   				error: function() {
-  					$('#success-message').html('Sorry, an error occurred.');
+  				// 	$('#success-message').html('Sorry, an error occurred.');
   				}
 			});
-    })
+			return false;
+    });
     
   //   $('#email-form').ajaxForm({ 
   //       resetForm: true,
