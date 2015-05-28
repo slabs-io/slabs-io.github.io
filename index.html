@@ -63,14 +63,14 @@
           <!-- Email Subscribe Form -->
           <div class="large-12 columns">
             <div class="collapse email">
-              <form action="//slabs.us10.list-manage.com/subscribe/post?u=3094a6a434523a83166fd74a0&amp;id=f378498a6a" method="POST" id="email-form">
+              <form action="//slabs.us10.list-manage.com/subscribe/post-json?u=3094a6a434523a83166fd74a0&amp;id=f378498a6a&amp;c=?" method="POST" id="email-form" target="_blank">
                 <p class="small-9 columns top-email">Sign up to receive updates:</p>
 
                 <div class="small-9 columns">
-                  <input type="email" name="email" placeholder="your email address" /></div>
+                  <input id="email_input" type="email" name="EMAIL" placeholder="your email address" /></div>
               
                 <div class="small-3 columns">
-                  <input class="button postfix radius" type="submit" />
+                  <input id="email_submit" class="button postfix radius" type="submit" />
                 </div>
                 <div id="success-message"></div>
 
@@ -344,19 +344,40 @@
         <!-- Ajax Form -->
       <script type="text/javascript">
     $(document).ready(function() { 
-    // bind form using ajaxForm 
-    $('#email-form').ajaxForm({ 
-        resetForm: true,
+    
+    $('#email_submit').click(function(){
+      var action = $('#email-form').attr('action');
+      $.ajax({
+  				url: action,
+  				type: 'GET',
+  				cache       : false,
+          dataType    : 'json',
+          contentType: "application/json; charset=utf-8",
+  				data: $('#email-form').serialize(),
+  				success: function(data){
+  					$('#success-message').html(data.msg);
+  					$('#success-message').fadeIn('slow');
+  					$('#email_input').val('');
+  				},
+  				error: function() {
+  				// 	$('#success-message').html('Sorry, an error occurred.');
+  				}
+			});
+			return false;
+    });
+    
+  //   $('#email-form').ajaxForm({ 
+  //       resetForm: true,
 
-        // target identifies the element(s) to update with the server response 
-        target: '#success-message', 
+  //       // target identifies the element(s) to update with the server response 
+  //       target: '#success-message', 
  
-        // success identifies the function to invoke when the server response 
-        // has been received; here we apply a fade-in effect to the new content 
-        success: function() { 
-            $('#success-message').fadeIn('slow'); 
-        } 
-    }); 
+  //       // success identifies the function to invoke when the server response 
+  //       // has been received; here we apply a fade-in effect to the new content 
+  //       success: function() { 
+  //           $('#success-message').fadeIn('slow'); 
+  //       } 
+  //   }); 
 });
     </script>
 
@@ -395,5 +416,15 @@
 
 
       <script>$(document).foundation();</script>
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-63510725-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
   </body>
 </html>
