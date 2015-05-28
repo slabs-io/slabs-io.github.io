@@ -98,6 +98,7 @@ h1 {
 
 .features h1 {
 	margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 .tour {
@@ -114,7 +115,7 @@ h2 {
 	color: #222;
 	font-family: "Raleway", Arial, Helvetica, Sans-serif;
 	font-weight: 500;
-	margin-top: 100px;
+	margin-top: 40px;
 }
 
 .features h2 {
@@ -151,7 +152,6 @@ p.header {
 }
 
 .video h1 {
-	color: #efefef;
     text-align: center;
 }
 
@@ -159,8 +159,28 @@ p.header {
     padding-bottom:40px;
 }
 
+.examples {
+    padding-bottom: 40px;
+}
+
+.examples h1{
+    margin-top:60px;
+    text-align: center;
+}
+
+.examples .description {
+    text-align: center;
+}
+
+.examples img {
+    margin-bottom:20px !important;
+}
+
+.examples .columns>h2 {
+    text-align: center;
+}
+
 .smallFeatures h1 {
-    color: #312A2A;
 }
 
 .full-row.darkgrey p {
