@@ -63,11 +63,11 @@
           <!-- Email Subscribe Form -->
           <div class="large-12 columns">
             <div class="collapse email">
-              <form action="//slabs.us10.list-manage.com/subscribe/post?u=3094a6a434523a83166fd74a0&amp;id=f378498a6a" method="POST" id="email-form">
+              <form action="//slabs.us10.list-manage.com/subscribe/post-json?u=3094a6a434523a83166fd74a0&amp;id=f378498a6a&amp;c=?" method="POST" id="email-form" target="_blank">
                 <p class="small-9 columns top-email">Sign up to receive updates:</p>
 
                 <div class="small-9 columns">
-                  <input id="email_input" type="email" name="email" placeholder="your email address" /></div>
+                  <input id="email_input" type="email" name="EMAIL" placeholder="your email address" /></div>
               
                 <div class="small-3 columns">
                   <input id="email_submit" class="button postfix radius" type="submit" />
@@ -385,12 +385,13 @@
       var action = $('#email-form').attr('action');
       $.ajax({
   				url: action,
-  				type: 'POST',
-  				data: {
-  					email: $('#email_input').val()
-  				},
+  				type: 'GET',
+  				cache       : false,
+          dataType    : 'json',
+          contentType: "application/json; charset=utf-8",
+  				data: $('#email-form').serialize(),
   				success: function(data){
-  					$('#success-message').html(data);
+  					$('#success-message').html(data.msg);
   					$('#success-message').fadeIn('slow');
   					$('#email_input').val('');
   				},
