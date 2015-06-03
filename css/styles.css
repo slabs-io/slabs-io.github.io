@@ -311,6 +311,14 @@ ul li {
 	text-align: center;
 }
 
+.offer {
+	font-size:25px;
+	padding-left:15px;
+}
+
+.offer .highlight {
+	font-weight:bold;
+}
 
 .footer li,a {
 	color: rgb(143,143,143);
