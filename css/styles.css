@@ -76,7 +76,8 @@ body {
 }
 
 .mainImg{
-    padding:62px;
+    padding:40px;
+	padding-bottom:0px;
 }
 
 .features-intro {
